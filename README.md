@@ -3,7 +3,7 @@
 # ReFloat
 
 ReFloat is a ReRAM based accelerator for accelerating large-scale sparse linear solvers. 
-The ReFloat is a new floating-point format which fits the ReRAM crossbars with hardware cost.
+The `refloat` format is a new floating-point format which fits the ReRAM crossbars with hardware cost.
 We provided the implemnetations of the conjugate gradient (CG) and the 
 biconjugate gradient stabilized (BiCGSTAB) solvers for different platforms including Nvidia GPU, CPU, and ReFloat. 
 The matrices used in the evaluation are from [SuiteSparse](https://sparse.tamu.edu) collection in the [martrix market 
