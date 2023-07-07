@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/658977766.svg)](https://zenodo.org/badge/latestdoi/658977766)
+
 # ReFloat
 
 ReFloat is a ReRAM based accelerator for accelerating large-scale sparse linear solvers. 
