@@ -47,3 +47,132 @@ To run the simulation,
     sh run_refloat.sh
 
 All the scripts can be configured to run CG by setting `SOLVER=0` or BiCG by setting `SOLVER=1`.
+
+
+# For SC'23 Artifact Evaluation:
+
+Step 1. To obtain a copy of the source code 
+
+    git clone https://github.com/linghaosong/ReFloat.git 
+
+Step 2. To download the matrices 
+
+    cd ReFloat/matrices 
+    sh download.sh
+
+Step 3. We provided a GPU implementation which requires a Nvidia P100 or similar HBM GPU. It is optional to run the GPU implementation. To compile the GPU code
+
+    cd ReFloat/gpu 
+    make
+
+Step 4. To run the GPU baseline and obtain the results
+
+4.1 To obtain the GPU CG exception time
+
+First, edit the script run_gpu.sh to set 
+
+    PRINT_RES= 
+    RUN=gpucg
+
+Then, then run the script 
+    
+    sh run_gpu.sh
+
+4.2 To obtain the GPU BiCG exception time
+
+First, edit the script run_gpu.sh to set 
+
+    PRINT_RES= 
+    RUN=gpubicg
+
+Then, then run the script 
+    
+    sh run_gpu.sh
+
+4.3 To obtain the GPU CG exception residual 
+
+First, edit the script run_gpu.sh to set 
+
+    PRINT_RES=1 
+    RUN=gpucg
+
+Then, then run the script 
+    
+    sh run_gpu.sh
+
+4.4 To obtain the GPU BiCG exception residual
+
+First, edit the script run_gpu.sh to set 
+
+    PRINT_RES=1 
+    RUN=gpubicg
+
+Then, then run the script 
+    
+    sh run_gpu.sh
+
+Step 5. To compile the simulation code
+
+    cd ReFloat/src
+    make
+
+5.1 To run the Feinberg baseline with the assumption that the funtionality is the same as FP64, go to
+
+    cd ReFloat/src/run/baselinefc
+
+To run CG, edit the script run_baselinefc.sh to set 
+
+    SOLVER=0
+
+Then run
+
+    run_baselinefc.sh
+
+To run BiCG, edit the script run_baselinefc.sh to set 
+
+    SOLVER=1
+
+Then run
+
+    run_baselinefc.sh  
+
+
+5.2 To run the Feinberg baseline with the evaluation of the functional correctness, go to
+
+    cd ReFloat/src/run/baseline
+
+To run CG, edit the script run_baseline.sh to set 
+
+    SOLVER=0
+
+Then run
+
+    run_baseline.sh
+
+To run BiCG, edit the script run_baseline.sh to set 
+
+    SOLVER=1
+
+Then run
+
+    run_baseline.sh  
+
+5.3 To run the ReFloat, go to
+
+    cd ReFloat/src/run/refloat
+
+To run CG, edit the script run_refloat.sh to set 
+
+    SOLVER=0
+
+Then run
+
+    run_refloat.sh
+
+To run BiCG, edit the script run_refloat.sh to set 
+
+    SOLVER=1
+
+Then run
+
+    run_refloat.sh  
