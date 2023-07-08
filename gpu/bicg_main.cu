@@ -409,7 +409,7 @@ int main(int argc, char *argv[])
 					CSRRowPtr.data(), CSRColIndex.data(), CSRVal.data(),
 					b.data(), x0.data(), p_f);
 
-	cout << "GPU BiCG solver time(s): " << process_time << "\n";
+	cout << "GPU BiCG solver time(ms): " << process_time * 1000 << "\n";
 	cout << "Iteration number: " << n_ite_take << "\n";
 
 	return 0;
