@@ -67,7 +67,7 @@ Step 3. We provided a GPU implementation which requires a Nvidia P100 or similar
 
 Step 4. To run the GPU baseline and obtain the results
 
-4.1 To obtain the GPU CG exception time
+4.1 To obtain the GPU CG execution time
 
 First, edit the script run_gpu.sh to set 
 
@@ -78,7 +78,7 @@ Then, then run the script
     
     sh run_gpu.sh
 
-4.2 To obtain the GPU BiCG exception time
+4.2 To obtain the GPU BiCG execution time
 
 First, edit the script run_gpu.sh to set 
 
@@ -89,7 +89,7 @@ Then, then run the script
     
     sh run_gpu.sh
 
-4.3 To obtain the GPU CG exception residual 
+4.3 To obtain the GPU CG execution residual 
 
 First, edit the script run_gpu.sh to set 
 
@@ -100,7 +100,7 @@ Then, then run the script
     
     sh run_gpu.sh
 
-4.4 To obtain the GPU BiCG exception residual
+4.4 To obtain the GPU BiCG execution residual
 
 First, edit the script run_gpu.sh to set 
 
