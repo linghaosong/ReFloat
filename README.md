@@ -126,7 +126,7 @@ To run CG, edit the script run_baselinefc.sh to set
 
 Then run
 
-    run_baselinefc.sh
+    sh run_baselinefc.sh
 
 To run BiCG, edit the script run_baselinefc.sh to set 
 
@@ -134,7 +134,7 @@ To run BiCG, edit the script run_baselinefc.sh to set
 
 Then run
 
-    run_baselinefc.sh  
+    sh run_baselinefc.sh  
 
 
 5.2 To run the Feinberg baseline with the evaluation of the functional correctness, go to
@@ -147,7 +147,7 @@ To run CG, edit the script run_baseline.sh to set
 
 Then run
 
-    run_baseline.sh
+    sh run_baseline.sh
 
 To run BiCG, edit the script run_baseline.sh to set 
 
@@ -155,7 +155,7 @@ To run BiCG, edit the script run_baseline.sh to set
 
 Then run
 
-    run_baseline.sh  
+    sh run_baseline.sh  
 
 5.3 To run the ReFloat, go to
 
@@ -167,7 +167,7 @@ To run CG, edit the script run_refloat.sh to set
 
 Then run
 
-    run_refloat.sh
+    sh run_refloat.sh
 
 To run BiCG, edit the script run_refloat.sh to set 
 
@@ -175,4 +175,4 @@ To run BiCG, edit the script run_refloat.sh to set
 
 Then run
 
-    run_refloat.sh  
+    sh run_refloat.sh  
