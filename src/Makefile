@@ -42,4 +42,4 @@ cgbaseline_fc: $(OBJS) cgbaseline_fc.o
 
 clean:
 	rm *.o
-	rm cgcpu cgrefloat cgbaseline_fc cgbaseline
+	rm cgcpu cgrefloat cgbaseline_fc
