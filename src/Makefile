@@ -6,7 +6,7 @@ GXX_FLAGS = -w -O3 -fopenmp
 
 .DEFAULT_GOAL := all
 
-all: cgcpu cgrefloat cgbaseline_fc cgbaseline
+all: cgcpu cgrefloat cgbaseline_fc
 
 OBJS=refloat_blas.o refloat_format.o refloat_helper.o refloat_solver.o
 
@@ -39,12 +39,6 @@ cgbaseline_fc.o: cgbaseline_fc.cpp
 
 cgbaseline_fc: $(OBJS) cgbaseline_fc.o 
 	g++ $(GXX_FLAGS) $(OBJS) cgbaseline_fc.o -o cgbaseline_fc $(INC)
-
-cgbaseline.o: cgbaseline.cpp
-	g++ $(GXX_FLAGS) -c cgbaseline.cpp $(INC)
-
-cgbaseline: $(OBJS) cgbaseline.o 
-	g++ $(GXX_FLAGS) $(OBJS) cgbaseline.o -o cgbaseline $(INC)
 
 clean:
 	rm *.o
