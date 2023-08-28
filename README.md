@@ -137,27 +137,7 @@ Then run
     sh run_baselinefc.sh  
 
 
-5.2 To run the Feinberg baseline with the evaluation of the functional correctness, go to
-
-    cd ReFloat/src/run/baseline
-
-To run CG, edit the script run_baseline.sh to set 
-
-    SOLVER=0
-
-Then run
-
-    sh run_baseline.sh
-
-To run BiCG, edit the script run_baseline.sh to set 
-
-    SOLVER=1
-
-Then run
-
-    sh run_baseline.sh  
-
-5.3 To run the ReFloat, go to
+5.2 To run the ReFloat, go to
 
     cd ReFloat/src/run/refloat
 
