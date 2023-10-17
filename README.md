@@ -9,6 +9,15 @@ biconjugate gradient stabilized (BiCGSTAB) solvers for different platforms inclu
 The matrices used in the evaluation are from [SuiteSparse](https://sparse.tamu.edu) collection in the [martrix market 
 format](https://math.nist.gov/MatrixMarket/formats.html).
 
+If you find this code useful, please cite:
+
+    @inproceedings{song2023refloat,
+        title={ReFloat: Low-Cost Floating-Point Processing in ReRAM for Accelerating Iterative Linear Solvers},
+        author={Song, Linghao and Chen, Fan and Li, Hai and Chen, Yiran},
+        booktitle={The International Conference for High Performance Computing, Networking, Storage and Analysis (SC '23)},
+        year = {2023}
+    }
+
 ## The input matrix
 
 We provided one sample matrix `crystm03` in the `matrices` directory. To download and decompress all the matrices, run
